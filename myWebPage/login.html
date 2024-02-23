@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+        <div class="box">
+            <div class="image">
+                <img src="https://static1.squarespace.com/static/5254c6e7e4b007332ef7f809/t/5eb17764a0fa9607573a14fe/1588688801277/PYB+Social+Image+-+Homepage+Website-01.png?format=1500w" alt="">
+            </div>
+            <div class="form-box">
+                <div class="button">
+                    <div class="bg" id="bg-btn"></div>
+                    <button type="button" class="form-btn" id="btn1" onclick="login()">Login</button>
+                    <button type="button" class="form-btn" id="btn2" onclick="register()">Register</button>
+                </div>
+                <div class="forms">
+                    <form class="login-box" id = "login" action="index.html">
+                        <input type="text" placeholder="username" class="input-field" required>
+                        <input type="password" placeholder="password" class="input-field" required>
+                        <input type="checkbox" id="check-box">
+                        <span >Remember password</span>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+
+                    </form>
+                    <form class="login-box" id = "register" >
+                        <input type="text" placeholder="username" class="input-field" id="reg-field1" required>
+                        <input type="email" placeholder="email" class="input-field" id="reg-field2" required>
+
+                        <input type="password" placeholder="password" class="input-field" id="reg-field3" required8>
+                        <input type="checkbox" id="check-box">
+                        <span >I agree to the term & conditions</span>
+                        <button type="submit" class="btn" id="reg-btn" onclick="loginPage()">Register</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+            let move = document.getElementById("bg-btn");
+            let reg = document.getElementById("register");
+            let log = document.getElementById("login");
+
+            let name = document.getElementById("reg-field1");
+            let email = document.getElementById("reg-field2");
+            let password = document.getElementById("reg-field3");
+            let regbtn = document.getElementById("reg-btn");
+
+            function register() {
+                move.style.left="50%";
+                log.style.left="-400px";
+                reg.style.left="60px";
+
+            }
+            function login() {
+                move.style.left="0%";
+                log.style.left="60px";
+                reg.style.left="450px";
+
+
+            }
+
+            function loginPage(){
+                if(name.value.trim()==""||password.value.trim()==""||email.value.trim()==""){
+                    alert("inputs should not be empty");
+                }
+                else{
+                    alert("register successfully");
+                    move.style.left="0%";
+                    log.style.left="80px";
+                    reg.style.left="450px";
+
+                }
+                
+            }
+
+            // validation 
+
+            
+        </script>
+
+    
+</body>
+</html>

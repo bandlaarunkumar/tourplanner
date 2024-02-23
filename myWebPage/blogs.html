@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+
+
+        }
+        .container{
+            color:white;
+            width: 100%;
+            height:100vh;
+
+        }
+        h1{
+            display: block;
+            text-align: center;
+        }
+        .blogs{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            /* flex-direction: column; */
+            
+        }
+
+        .blog-details{
+            width:350px;
+            height:200px;
+            border:2px solid gray;
+            margin:30px;
+            overflow:hidden;
+            position: relative;
+        }
+
+        .blog-details:hover{
+            height:380px;
+            overflow: visible;
+            transition: 0.8s;
+            border: 3px solid white;
+            box-shadow: 5px 5px 10px 2px white;
+        }
+        .content h3{
+            transition: 0.5s;
+
+        }
+        .img{
+            text-align: center;
+            /* position: absolute; */
+            width:350px;
+            height: 200px;
+        }
+        img{
+            width:100%;
+            height: 100%;
+            margin-bottom:10px;
+
+        }
+        .footer{
+    /* position: absolute; */
+    bottom: 10%;
+    width:100%;
+    height:80px;
+    left:0;
+    width:100%;
+    transition: 0.6s;
+}
+.media{
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+.links{
+    display: block;
+    text-align: center;
+    margin:0px 60px 40px 60px;
+
+}
+.links a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding-right:60px;
+}
+.media i{
+    padding:40px 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.credit{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    border-top: 1px solid gray;
+    padding:20px;
+    background-color: black;
+
+}   
+
+/* responsiveness */
+
+@media (max-width:1025px){
+    
+}
+@media (max-width:770px){
+    .blog-details{
+            width:300px;
+            height:200px;
+            border:2px solid gray;
+            margin:30px 20px;
+            overflow:hidden;
+            position: relative;
+        }
+        .img{
+            /* position: absolute; */
+            width:300px;
+            height: 200px;
+        }
+   
+    .links{
+      
+        margin:0px 30px 10px 30px;
+    
+    }
+    .links a{
+       
+        font-size: 20px;
+        padding:20px 15px 20px 15px;
+    }
+    .media i{
+        padding:40px 20px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .credit{
+        font-size: 15px;
+        padding:20px;
+    
+    }   
+}
+@media (max-width:380px){
+    
+    .links{
+      
+        margin:0px 30px 10px 30px;
+    
+    }
+    .links a{
+       
+        font-size: 15px;
+        padding:20px 15px 20px 15px;
+    }
+    .media i{
+        padding:40px 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .credit{
+        font-size: 13px;
+        padding:20px;
+    
+    }   
+}
+
+@media (max-width:325px){
+    
+    .links{
+      
+        margin:0px 40px 40px 40px;
+    
+    }
+    .links a{
+       
+        font-size: 15px;
+        padding-right:10px;
+    }
+    .media i{
+        padding:40px 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .credit{
+        font-size: 13px;
+        padding:20px;
+    
+    }   
+    .blog-details{
+            width:280px;
+            height:200px;
+            margin:30px 20px;
+           
+        }
+        .img{
+            /* position: absolute; */
+            width:280px;
+            height: 200px;
+        }
+        .content{
+            font-size:14px
+        }
+   
+}
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <h1>BLOGS</h1>
+
+        <div class="blogs">
+            <div class="blog-details">
+                <div class="img">
+                    <img src="https://www.myglobalviewpoint.com/wp-content/uploads/2021/12/Best-Travel-Blogs-Featured-Image.jpg">
+                </div>
+                <div class="content">
+                    <h3>Traveller</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sunt quasi ducimus sint voluptate dolore saepe eveniet, at obcaecati soluta ipsum nulla, dolores ullam asperiores autem non rem placeat nam?</p>
+                </div>
+            </div>
+            <div class="blog-details">
+                <div class="img">
+                    <img src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/xshh9xtmwiyk1zwvezpl">
+                </div>
+                <div class="content">
+                    <h3>Traveller</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sunt quasi ducimus sint voluptate dolore saepe eveniet, at obcaecati soluta ipsum nulla, dolores ullam asperiores autem non rem placeat nam?</p>
+                </div>
+            </div>
+            <div class="blog-details">
+                <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_O_qbS2EDZy3S5E_lr6jXDWaIpRcclaFAlihIkztPQVn1EcYpd4oYlXGOCUBF6xVZDko&usqp=CAU">
+                </div>
+                <div class="content">
+                    <h3>Traveller</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sunt quasi ducimus sint voluptate dolore saepe eveniet, at obcaecati soluta ipsum nulla, dolores ullam asperiores autem non rem placeat nam?</p>
+                </div>
+            </div>
+            <div class="blog-details">
+                <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu9AoJRnWkyRwb1JwMQaZiZGuU5laGH9N8M-fZXSbGIfgYEBEn222gGsyxa4uooPrF1KY&usqp=CAU">
+                </div>
+                <div class="content">
+                    <h3>Traveller</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sunt quasi ducimus sint voluptate dolore saepe eveniet, at obcaecati soluta ipsum nulla, dolores ullam asperiores autem non rem placeat nam?</p>
+                </div>
+            </div>
+            <div class="blog-details">
+                <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNsCFd_lg64awAbUWOzJXI58hS88FV-Ov8BaoY4HEf3eEU3GGkB-5HZVZH4MtAJtOKSsU&usqp=CAU">
+                </div>
+                <div class="content">
+                    <h3>Traveller</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sunt quasi ducimus sint voluptate dolore saepe eveniet, at obcaecati soluta ipsum nulla, dolores ullam asperiores autem non rem placeat nam?</p>
+                </div>
+            </div>
+            <div class="blog-details">
+                <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikoZTvWqUi5Ncleq-Edt04CpEL2cs5nAFoHB_8gUQ8Rh97gkiWuzY8RM4uS3mtgKqrpk&usqp=CAU">
+                </div>
+                <div class="content">
+                    <h3>Traveller</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sunt quasi ducimus sint voluptate dolore saepe eveniet, at obcaecati soluta ipsum nulla, dolores ullam asperiores autem non rem placeat nam?</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="links">
+                    <a href="index.html" >Home</a>
+                    <a href="about.html" >About</a>
+                    <a href="destination.html">Destination</a>
+                    <a href="service.html" >Services</a>
+                    <a href="contact.html" >Contact</a>
+                    
+                    
+                </div>
+            <div class="credit"> copyright @ 2023 by Mr.Bandla Arun Kumar </div>
+
+            
+        </div>
+   
+    </div>
+    
+</body>
+</html>
